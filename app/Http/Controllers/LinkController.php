@@ -99,7 +99,7 @@ class LinkController extends Controller
     {
         try {
             Link::destroy($id);
-            return redirect()->back()->with("info", "Your link was delete successfully!");
+            return redirect()->back()->with("info", "Your link was deleted successfully!");
         } catch (\Exception $e) {
             return redirect()->back()->with("warning", "There was a problem with your request. We're working on it");
         }
